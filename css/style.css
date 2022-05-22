@@ -75,6 +75,7 @@ a {
     display: grid;
     align-items: flex-start;
     grid-template-columns: 60% 1fr;
+    box-shadow: 0px 60px 60px 30px black;
 }
 
 .header [type="search"] {
@@ -106,7 +107,7 @@ a {
 
 .header div:nth-child(2) {
     display: grid;
-    grid-template-columns: repeat(2, min-content) 107px;
+    grid-template-columns: repeat(2, min-content) 110px;
     align-items: center;
     justify-content: center;
     justify-items: end;
@@ -125,7 +126,7 @@ a {
     display: grid;
     grid-template-columns: repeat(3, min-content);
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     gap: 30px;
 }
 
@@ -136,4 +137,63 @@ a {
     border-style: none;
     border-radius: 17px;
     width: 80px;
+}
+
+article p:first-child {
+    font-size: 13px;
+}
+
+article p:nth-child(2) {
+    font-size: 30px;
+}
+
+.main-content {
+    background-color: #E2E8F0;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: column;
+    gap: 30px;
+}
+
+.projects {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.announcements {
+    grid-column: 2 / 3;
+}
+
+.card {
+    background-color: white;
+    width: 370px;
+    height: 250px;
+    padding: 40px 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 8px;
+    background-image: linear-gradient(to right,
+    #F0B429 3%, white 3% 40%);
+}
+
+.card p {
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.card article {
+    margin-bottom: auto;
+}
+
+.card article+div {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
 }
