@@ -192,8 +192,9 @@ input {
 
 .card {
     border-radius: 20px;
-    height: 250px;
-    width: 380px;
+    /* height: max-content; */
+    height: auto;
+    width: fit-content;
     background:  linear-gradient(90deg, #F0B429 12px , #FFFFFF 12px);
     padding: 40px 30px;
     display: grid;
