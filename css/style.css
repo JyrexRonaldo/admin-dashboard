@@ -158,7 +158,7 @@ input {
 .main-content {
     display: grid;
     grid-template-columns: 1fr 370px;
-    grid-template-rows: 30px 1fr 30px 1fr;
+    grid-template-rows: 30px 340px 30px min-content;
     background-color: #E2E8F0;
     padding-left: 20px;
     justify-content: flex-end;
@@ -231,6 +231,9 @@ input {
     background-color: #FFFFFF;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    height: fit-content;
+    padding: 20px 20px;
+    display: grid;
 }
 
 .announcements p:first-child {
@@ -241,6 +244,12 @@ input {
 .announcements p:last-child {
     width: 280px;
     font-size: 1rem;
+    padding-bottom: 15px;
+    border-bottom: 1px solid black;
+}
+
+.announcements div:last-child p:last-child {
+    border: none;
 }
 
 .trending {
