@@ -30,11 +30,6 @@ body {
     color: #FFFFFF;
 }
 
-/* .main-content {
-    grid-area: 2 / 2 / 3 / 3;
-} */
-
-
 .small-icon {
     border-radius: 50%;
     width: 60px;
@@ -164,35 +159,25 @@ input {
     display: grid;
     grid-template-columns: 1fr 370px;
     grid-template-rows: 30px 1fr 30px 1fr;
-    /* align-items: stretch;  */
-    /* row-gap: 10px; */
     background-color: #E2E8F0;
     padding-left: 20px;
-    /* column-gap: 60px; */
     justify-content: flex-end;
-    /* align-items: center; */
     column-gap: 40px;
     row-gap: 20px;
     align-content: center;
 }
 
 .projects {
-    /* width: auto; */
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    /* grid-auto-flow: column; */
     gap: 30px;
     height: min-content;
     grid-column: 1 / 2;
     grid-row: 2 / 5;
-    /* justify-content: center; */
-    /* height: 98%; */
-
 }
 
 .card {
     border-radius: 20px;
-    /* height: max-content; */
     height: auto;
     width: fit-content;
     background:  linear-gradient(90deg, #F0B429 12px , #FFFFFF 12px);
@@ -213,20 +198,6 @@ input {
 
 .card p:first-child {
     font-weight: bold;
-}
-
-/* .right-pane {
-    grid-column: 2 / 3;
-    grid-row: 1 / -1;
-    display: grid;
-    grid-template-rows: 30px 300px 30px  400px;
-} */
-
-.right-pane > div {
-    /* padding: 0px 5px;
-    width: 350px;
-    border-radius: 25px;
-    background-color: #FFFFFF; */
 }
 
 .main-content > p  {
@@ -258,7 +229,6 @@ input {
     width: min-content;
     border-radius: 25px;
     background-color: #FFFFFF;
-    /* display: grid; */
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 }
@@ -271,9 +241,6 @@ input {
 .announcements p:last-child {
     width: 280px;
     font-size: 1rem;
-    /* padding-bottom: 20px; */
-    /* border-bottom: 1px solid black; */
-
 }
 
 .trending {
@@ -289,5 +256,4 @@ input {
     height: min-content;
     grid-column: 2 / 3;
     grid-row: 4 / 5;
-
 }
